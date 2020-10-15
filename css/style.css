@@ -777,6 +777,9 @@ body {
   #sec5 div[id^="project"] .bg .desc {
     top: 30%; } }
 @media only screen and (max-width: 500px) {
+  #sec1 .bg .title {
+    width: 80%; }
+
   #sec2 .bg .info {
     width: 40%; }
 
