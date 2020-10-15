@@ -361,7 +361,8 @@ body {
       padding: 20px 0;
       color: #fff;
       font-size: 0.875em;
-      line-height: 1.750em; }
+      line-height: 1.750em;
+      text-decoration: underline; }
     #sec4 .desc li dd {
       color: #a88056;
       font-size: 0.750em;
