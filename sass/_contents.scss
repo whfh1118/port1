@@ -503,7 +503,7 @@
 			overflow: hidden;
 			width: 102px;
 			height: 40px;
-			@include bgImage("/../images/arrow.png", no-repeat, (center, center));
+			@include bgImage("/port1/images/arrow.png", no-repeat, (center, center));
 			&:nth-child(2) {
 				margin-left: 20%;
 			}

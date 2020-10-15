@@ -20,7 +20,7 @@ window.addEventListener("load", function(){
 	var project5=document.getElementById("project5");
 	var project5Html="";
 
-	var project1URL="/portfolio/data/project1.html";
+	var project1URL="/port1/data/project1.html";
 	var project1Request=new XMLHttpRequest();
 
 	project1Request.open("GET", project1URL);
@@ -35,7 +35,7 @@ window.addEventListener("load", function(){
 		}
 	});
 
-	var project2URL="/portfolio/data/project2.html";
+	var project2URL="/port1/data/project2.html";
 	var project2Request=new XMLHttpRequest();
 
 	project2Request.open("GET", project2URL);
@@ -50,7 +50,7 @@ window.addEventListener("load", function(){
 		}
 	});
 
-	var project3URL="/portfolio/data/project3.html";
+	var project3URL="/port1/data/project3.html";
 	var project3Request=new XMLHttpRequest();
 
 	project3Request.open("GET", project3URL);
@@ -65,7 +65,7 @@ window.addEventListener("load", function(){
 		}
 	});
 
-	var project4URL="/portfolio/data/project4.html";
+	var project4URL="/port1/data/project4.html";
 	var project4Request=new XMLHttpRequest();
 
 	project4Request.open("GET", project4URL);
@@ -80,7 +80,7 @@ window.addEventListener("load", function(){
 		}
 	});
 
-	var project5URL="/portfolio/data/project5.html";
+	var project5URL="/port1/data/project5.html";
 	var project5Request=new XMLHttpRequest();
 
 	project5Request.open("GET", project5URL);
@@ -129,7 +129,7 @@ window.addEventListener("load", function(){
 	
 	var gnbHtml="";
 
-	var requestURL="/portfolio/data/data.json";
+	var requestURL="/port1/data/data.json";
 	var request=new XMLHttpRequest();
 
 	function init(){

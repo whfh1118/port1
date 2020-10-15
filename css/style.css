@@ -516,7 +516,7 @@ body {
     overflow: hidden;
     width: 102px;
     height: 40px;
-    background-image: url("/../images/arrow.png");
+    background-image: url("/port1/images/arrow.png");
     background-repeat: no-repeat;
     background-position: center, center;
     background-sizing: auto; }
