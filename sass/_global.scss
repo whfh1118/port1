@@ -1,0 +1,142 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+#tab {
+	position: fixed;
+	display: none;
+	right: 0;
+	top: 5%;
+	padding: 20px;
+	z-index: 9999;
+	margin: 5px;
+	.tab_button {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		transition: all .5s ease-in-out;
+		.tab_line {
+			width: 30px;
+			height: 3px;
+			background-color: #cbcbcb;
+			border-radius: 10px;
+			transition: all .5s ease-in-out;
+		}
+		.tab_line::before,
+		.tab_line::after {
+			content: "";
+			position: absolute;
+			width: 30px;
+			height: 3px;
+			background-color: #cbcbcb;
+			border-radius: 10px;
+			transition: all .5s ease-in-out;
+		}
+		.tab_line::before {
+			transform: translateY(-7px);
+		}
+		.tab_line::after {
+			transform: translateY(7px);
+		}
+	}
+}
+#tab .tab_button.open {
+	.tab_line {
+		background: transparent;
+	}
+	.tab_line::before {
+		transform: rotate(45deg);
+		background-color: #cbcbcb;
+	}
+	.tab_line::after {
+		transform: rotate(-45deg);
+		background-color: #cbcbcb;
+	}
+}
+#tab_gnb {
+	display: flex;
+	position: fixed;
+	left: 100%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(30,28,28,0.9);
+	z-index: 9998;
+	transition: all .3s;
+	.tab_list {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		align-content: center;
+		padding: 20px;
+		> ul {
+			margin-top: 15vh;
+			width: 100%;
+			height: 70vh;
+		}
+		> ul > li > a {
+			display: block;
+			text-align: center;
+			line-height: 50px;
+			color: #fff;
+		}
+		ul ul {
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 50px;
+			width: 100%;
+		}
+		ul ul.active {
+			display: block;
+		}
+		ul ul li a {
+			display: block;
+			text-align: center;
+			line-height: 45px;
+			color: #7e7e7e;
+		}
+		> ul > li:last-child {
+			position: relative;
+		}
+	}
+}
+#tab_gnb.active {
+	left: 0;
+}
+#gnb {
+	position: fixed;
+	right: 3%;
+	top: 50%;
+	z-index: 100;
+	margin-top: -128px;
+	ul {
+		text-align: right;
+	}
+	ul li a {
+		display: block;
+		position: relative;
+		padding: 0 10px;
+		width: 100%;
+		min-width: 120px;
+		line-height: 50px;
+		font-size: 1em;
+		box-sizing: border-box;
+		color: #cbcbcb;
+	}
+	> ul > li.active > a {
+		color: #ffa444;
+	}
+	ul ul {
+		display: none;
+	}
+	ul ul.active {
+		display: block;
+	}
+	ul ul li.active a{
+		color: #ffa444;
+	}
+}
